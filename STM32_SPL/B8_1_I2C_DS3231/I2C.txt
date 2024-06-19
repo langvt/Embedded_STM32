@@ -1,0 +1,103 @@
+* Status Register(sr1)
+15 		14 	13 	12 	11 	10 	9 	8 	7 	6 	5 	4 	3 	2 	1 	0
+SMBALERT	TIMEOUT Res.	PECERR 	OVR 	AF 	ARLO 	BERR 	TxE 	RxNE	Res.	STOPF 	ADD10 	BTF 	ADDR 	SB
+rc_w0 		rc_w0 	rc_w0 	rc_w0 	rc_w0 	rc_w0 	rc_w0 	r 	r 	r 	r 	r 	r 	r	r	r
+	
+
+	Bit 15 SMBALERT: SMBus alert
+		Chế độ SMBus host:
+			0: không có SMBALERT
+			1: Sự kiện SMBALERT xảy ra trên pin
+		Chế độ SMBus slave:
+			0: không có tiêu đề địa chỉ phản hồi SMBALERT
+			1: Nhận tiêu đề địa chỉ phản hồi SMBALERT khi SMBALERT LOW
+			Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+	Bit 14 TIMEOUT: Lỗi Timeout hoặc Tlow
+		0: Không có lỗi timeout
+		1: SCL vẫn giữ mức LOW trong 25 ms (Timeout) Hoặc Thời gian kéo dài mức thấp đồng hồ tích lũy của master hơn 10 ms (Tlow)Hoặc
+		Thời gian kéo dài mức thấp đồng hồ tích lũy của slave hơn 25 ms (Tlow)
+		Khi được thiết lập ở chế độ slave: slave sẽ thiết lập lại giao tiếp và các đường dây sẽ được phần cứng giải phóng.
+		Khi được thiết lập ở chế độ master: Điều kiện dừng sẽ được phần cứng gửi.
+		Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+		Chú ý: Tính năng này chỉ có sẵn ở chế độ SMBus.
+	Bit 13 Reserved, must be kept at reset value (Dành riêng, phải giữ giá trị khởi tạo)
+	Bit 12 PECERR: Lỗi PEC trong khi nhận
+		0: không có lỗi PEC: người nhận trả về ACK sau khi nhận PEC (nếu ACK=1)
+		1: lỗi PEC: người nhận trả về NACK sau khi nhận PEC (dù ACK có là gì)
+		Chú ý: Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+	Bit 11 OVR: Overrun/Underrun
+		0: Không có overrun/underrun
+		1: Overrun hoặc underrun
+		Được phần cứng thiết lập ở chế độ slave khi NOSTRETCH=1 và:
+		Khi nhận một byte mới mà thanh ghi DR chưa được đọc, byte mới nhận sẽ bị mất.
+		Khi truyền một byte mới mà thanh ghi DR chưa được ghi, cùng một byte sẽ được truyền hai lần.
+		Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+		Chú ý: Nếu ghi DR xảy ra rất gần với cạnh lên của SCL, dữ liệu được gửi là không xác định và lỗi thời gian giữ sẽ xảy ra.
+	Bit 10 AF: Acknowledge failure
+		0: Không có lỗi acknowledge
+		1: Lỗi acknowledge
+		Được phần cứng thiết lập khi không có acknowledge trả về.
+		Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+	Bit 9 ARLO: Arbitration lost (master mode)
+		0: Không phát hiện mất arbitration
+		1: Phát hiện mất arbitration
+		Được phần cứng thiết lập khi giao diện mất arbitration của bus với master khác
+		Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+		Sau một sự kiện ARLO, giao diện tự động chuyển về chế độ slave (MSL=0).
+		Chú ý: Trong SMBUS, arbitration trên dữ liệu ở chế độ slave chỉ xảy ra trong giai đoạn dữ liệu, hoặc truyền acknowledge (không phải trên acknowledge địa chỉ).
+	Bit 8 BERR: Bus error
+		0: Không có Start hoặc Stop không đúng chỗ
+		1: Start hoặc Stop không đúng chỗ
+		Được phần cứng thiết lập khi giao diện phát hiện cạnh lên hoặc xuống của SDA trong khi SCL cao, xảy ra ở vị trí không hợp lệ trong quá trình truyền byte.
+		Xóa bằng cách phần mềm ghi 0, hoặc bằng phần cứng khi PE=0.
+	Bit 7 TxE: Data register empty (transmitters)
+		0: Thanh ghi dữ liệu không rỗng
+		1: Thanh ghi dữ liệu rỗng
+		Được thiết lập khi DR trống trong quá trình truyền. TxE không được thiết lập trong giai đoạn địa chỉ.
+		Xóa bằng cách phần mềm ghi vào thanh ghi DR hoặc bằng phần cứng sau một điều kiện bắt đầu hoặc dừng hoặc khi PE=0.
+		Chú ý: TxE không được xóa bằng cách ghi dữ liệu đầu tiên được truyền, hoặc bằng cách ghi dữ liệu khi BTF được thiết lập, vì trong cả hai trường hợp thanh ghi dữ liệu vẫn trống.
+	Bit 6 RxNE: Data register not empty (receivers)
+		0: Thanh ghi dữ liệu rỗng
+		1: Thanh ghi dữ liệu không rỗng
+		Được thiết lập khi thanh ghi dữ liệu không trống trong chế độ nhận. RxNE không được thiết lập trong giai đoạn địa chỉ.
+		Xóa bằng cách phần mềm đọc hoặc ghi vào thanh ghi DR hoặc bằng phần cứng khi PE=0.
+		Chú ý: RxNE không được xóa bằng cách đọc dữ liệu khi BTF được thiết lập, vì thanh ghi dữ liệu vẫn đầy.
+	Bit 5 Reserved, must be kept at reset value (Dành riêng, phải giữ giá trị khởi tạo)
+	Bit 4 STOPF: Stop detection (slave mode)
+		0: Không phát hiện điều kiện Stop
+		1: Phát hiện điều kiện Stop
+		Được phần cứng thiết lập khi phát hiện điều kiện Stop trên bus bởi slave sau khi acknowledge (nếu ACK=1).
+		Xóa bằng cách phần mềm đọc thanh ghi SR1 sau đó ghi vào thanh ghi CR1, hoặc bằng phần cứng khi PE=0.
+		Chú ý: Bit STOPF không được thiết lập sau khi nhận NACK.
+		Nên thực hiện trình tự xóa hoàn chỉnh (ĐỌC SR1 sau đó GHI CR1) sau khi STOPF được thiết lập.
+	Bit 3 ADD10: 10-bit header sent (Master mode)
+		0: Không có sự kiện ADD10
+		1: Master đã gửi byte địa chỉ đầu tiên (header).
+		Được phần cứng thiết lập khi master đã gửi byte đầu tiên ở chế độ địa chỉ 10-bit.
+		Xóa bằng cách phần mềm đọc thanh ghi SR1 sau đó ghi vào thanh ghi DR của byte địa chỉ thứ hai, hoặc bằng phần cứng khi PE=0.
+		Chú ý: Bit ADD10 không được thiết lập sau khi nhận NACK.
+	Bit 2 BTF: Byte transfer finished
+		0: Chuyển byte dữ liệu chưa hoàn thành
+		1: Chuyển byte dữ liệu thành công
+		Được phần cứng thiết lập khi NOSTRETCH=0 và:
+		Khi nhận một byte mới và DR chưa được đọc (RxNE=1).
+		Khi truyền một byte mới và DR chưa được ghi (TxE=1).
+		Xóa bằng cách phần mềm đọc SR1 sau đó đọc hoặc ghi vào thanh ghi DR hoặc bằng phần cứng sau điều kiện bắt đầu hoặc dừng trong quá trình truyền hoặc khi PE=0.
+		Chú ý: Bit BTF không được thiết lập sau khi nhận NACK.
+	Bit 1 ADDR: Address sent (master mode)/matched (slave mode)
+		Chế độ Slave:
+			0: Địa chỉ không khớp hoặc không được nhận.
+			1: Địa chỉ nhận được khớp.
+			Được phần cứng thiết lập khi địa chỉ nhận được khớp với nội dung của các thanh ghi OAR hoặc nhận một cuộc gọi tổng quát hoặc một SMBus Device Default Address hoặc SMBus Host hoặc SMBus Alert được nhận diện (khi được bật tùy thuộc vào cấu hình).
+			Chú ý: Ở chế độ slave, nên thực hiện trình tự xóa hoàn chỉnh (ĐỌC SR1 sau đó ĐỌC SR2) sau khi ADDR được thiết lập.
+		Chế độ Master:
+			0: Chưa hoàn thành việc gửi địa chỉ.
+			1: Hoàn thành việc gửi địa chỉ.
+			Đối với địa chỉ 10-bit, bit này được thiết lập sau ACK của byte thứ hai.
+			Đối với địa chỉ 7-bit, bit này được thiết lập sau ACK của byte.
+			Chú ý: Bit ADDR không được thiết lập sau khi nhận NACK.
+	Bit 0 SB: Start bit (Master mode)
+		0: Không có điều kiện Start
+		1: Điều kiện Start được tạo ra.
+		Được thiết lập khi điều kiện Start được tạo ra.
+		Xóa bằng cách phần mềm đọc thanh ghi SR1 sau đó ghi vào thanh ghi DR, hoặc bằng phần cứng khi PE=0.
