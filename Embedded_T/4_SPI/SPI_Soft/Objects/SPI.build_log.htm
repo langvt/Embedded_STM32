@@ -1,0 +1,1205 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lang toan, d, LIC=GMZI6-DHZ8R-RAADM-X3K8A-79GMS-GHGYV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\LangToan\1-TOAN_LT\Couse\Embedded\Keil_C\STM32X\SPI\SPI.uvprojx
+Project File Date:  10/02/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: missing terminating '"' character [-Winvalid-pp-token]
+#include "stm32f10x_
+         ^
+main.c(1): error: expected "FILENAME" or <FILENAME>
+main.c(1): warning: no newline at end of file [-Wnewline-eof]
+#include "stm32f10x_
+                    ^
+main.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+3 warnings and 1 error generated.
+compiling main.c...
+RTE/CMSIS/RTX_Config.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include\cmsis_os2.h(73): warning: // comments are not allowed in this language [-Wcomment]
+//  ==== Enumerations, structures, defines ====
+^
+RTE/CMSIS/RTX_Config.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(32): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include/rtx_def.h(32): warning: In file included from...
+./RTE/CMSIS\RTX_Config.h(38): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> --------------------
+^
+RTE/CMSIS/RTX_Config.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(32): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include/rtx_def.h(46): warning: // comments are not allowed in this language [-Wcomment]
+#endif  // RTX_DEF_H_
+        ^
+RTE/CMSIS/RTX_Config.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(40): warning: // comments are not allowed in this language [-Wcomment]
+/// Kernel Information
+^
+RTE/CMSIS/RTX_Config.c(31): warning: // comments are not allowed in this language [-Wcomment]
+// OS Idle Thread
+^
+5 warnings generated.
+compiling RTX_Config.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include\cmsis_os2.h(73): warning: // comments are not allowed in this language [-Wcomment]
+//  ==== Enumerations, structures, defines ====
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(32): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include/rtx_def.h(32): warning: In file included from...
+./RTE/CMSIS\RTX_Config.h(38): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> --------------------
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(32): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include/rtx_def.h(46): warning: // comments are not allowed in this language [-Wcomment]
+#endif  // RTX_DEF_H_
+        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_os.h(40): warning: // comments are not allowed in this language [-Wcomment]
+/// Kernel Information
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(29): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(38): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include\rtx_evr.h(29): warning: // comments are not allowed in this language [-Wcomment]
+#include "rtx_os.h"                     // RTX OS definitions
+                                        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Source/rtx_lib.c(41): warning: // comments are not allowed in this language [-Wcomment]
+// System Configuration
+^
+21 warnings generated.
+compiling rtx_lib.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(36): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include\cmsis_os2.h(73): warning: // comments are not allowed in this language [-Wcomment]
+//  ==== Enumerations, structures, defines ====
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.h(27): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include\Driver_SPI.h(58): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include/Driver_Common.h(47): warning: // comments are not allowed in this language [-Wcomment]
+  uint16_t api;                         ///< API version
+                                        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.h(27): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include\Driver_SPI.h(73): warning: // comments are not allowed in this language [-Wcomment]
+#define ARM_SPI_MODE_INACTIVE           (0x00UL << ARM_SPI_CONTROL_Pos)     ///< SPI Inactive
+                                                                            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(38): warning: In file included from...
+./RTE/CMSIS_Driver\SPI_MultiSlave_Config.h(34): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> ------------------
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(146): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Initialize      (ARM_SPI_SignalEvent_t cb_event, const SPI_RESOURCES *spi);
+                                                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(147): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Uninitialize    (const SPI_RESOURCES *spi);
+                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(148): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_PowerControl    (ARM_POWER_STATE state, const SPI_RESOURCES *spi);
+                                                                        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(149): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Send            (const void *data, uint32_t num, const SPI_RESOURCES *spi);
+                                                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(150): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Receive         (void *data, uint32_t num, const SPI_RESOURCES *spi);
+                                                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(151): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Transfer        (const void *data_out, void *data_in, uint32_t num, const SPI_RESOURCES *spi);
+                                                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(152): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static uint32_t             SPI_GetDataCount    (const SPI_RESOURCES *spi);
+                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(153): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t              SPI_Control         (uint32_t control, uint32_t arg, const SPI_RESOURCES *spi);
+                                                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(154): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static ARM_SPI_STATUS       SPI_GetStatus       (const SPI_RESOURCES *spi);
+                                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(162): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const SPI_RESOURCES SPI0_Resources = {
+       ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(173): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const SPI_RESOURCES SPI1_Resources = {
+       ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(634): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Initialize (ARM_SPI_SignalEvent_t cb_event, const SPI_RESOURCES *spi) {
+                                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(692): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Uninitialize (const SPI_RESOURCES *spi) {
+                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(731): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_PowerControl (ARM_POWER_STATE state, const SPI_RESOURCES *spi) {
+                                                        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(807): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Send (const void *data, uint32_t num, const SPI_RESOURCES *spi) {
+                                                         ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(894): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Receive (void *data, uint32_t num, const SPI_RESOURCES *spi) {
+                                                      ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(982): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Transfer (const void *data_out, void *data_in, uint32_t num, const SPI_RESOURCES *spi) {
+                                                                                ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(1067): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static uint32_t SPI_GetDataCount (const SPI_RESOURCES *spi) {
+                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(1085): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static int32_t SPI_Control (uint32_t control, uint32_t arg, const SPI_RESOURCES *spi) {
+                                                            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI/SPI_MultiSlave.c(1254): warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static ARM_SPI_STATUS SPI_GetStatus (const SPI_RESOURCES *spi) {
+                                     ^
+24 warnings generated.
+compiling SPI_MultiSlave.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(33): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(33): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(33): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(33): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(33): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(34): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(39): warning: // comments are not allowed in this language [-Wcomment]
+/// GPIO Pin identifier
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(173): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable);
+                                                 ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(34): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(182): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx);
+       ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(34): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(197): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef      *GPIOx,
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(34): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(246): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(35): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(48): warning: // comments are not allowed in this language [-Wcomment]
+// DMA channel Interrupt Flags
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(146): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  DMA_Channel->CCR &= ~DMA_CHANNEL_EN;
+                   ~~ ^~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(157): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+__FORCE_INLINE bool DMA_ChannelStatus (DMA_Channel_TypeDef *DMA_Channel) {
+               ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include\Driver_SPI.h(58): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include/Driver_Common.h(47): warning: // comments are not allowed in this language [-Wcomment]
+  uint16_t api;                         ///< API version
+                                        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include\Driver_SPI.h(73): warning: // comments are not allowed in this language [-Wcomment]
+#define ARM_SPI_MODE_INACTIVE           (0x00UL << ARM_SPI_CONTROL_Pos)     ///< SPI Inactive
+                                                                            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(40): warning: In file included from...
+./RTE/Device/STM32F103C8\RTE_Device.h(27): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> --------------------
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(48): error: "SPI not configured in RTE_Device.h!"
+  #error "SPI not configured in RTE_Device.h!"
+   ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(51): warning: // comments are not allowed in this language [-Wcomment]
+// SPI1 configuration definitions
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(61): warning: // comments are not allowed in this language [-Wcomment]
+// Driver Version
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(70): warning: missing field 'reserved' initializer [-Wmissing-field-initializers]
+};
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(368): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool ok = true;
+  ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(57): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.h(308): warning: padding size of 'struct _SPI_TRANSFER_INFO' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct _SPI_TRANSFER_INFO {
+               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(528): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default: return ARM_DRIVER_ERROR_UNSUPPORTED;
+    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(563): warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  spi->xfer->tx_buf = (uint8_t *)data;
+                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(767): warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  spi->xfer->tx_buf = (uint8_t *)data_out;
+                                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(928): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+      spi->reg->CR1  =  (spi->reg->CR1 & ~SPI_CR1_BR) | (val << 3U);
+                     ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(934): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+      return (spi->pclk >> (((spi->reg->CR1 & SPI_CR1_BR) >> 3U) + 1U));
+      ~~~~~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(1122): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  spi->reg->CR2  = cr2 | SPI_CR2_ERRIE;
+                 ~ ~~~~^~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(1123): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  spi->reg->CR1  = cr1;
+                 ~ ^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(1154): warning: no previous prototype for function 'SPI_IRQHandler' [-Wmissing-prototypes]
+void SPI_IRQHandler (const SPI_RESOURCES *spi) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/SPI_STM32F10x.c(1154): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SPI_IRQHandler (const SPI_RESOURCES *spi) {
+^
+static 
+39 warnings and 1 error generated.
+compiling SPI_STM32F10x.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(23): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(23): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(23): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(23): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(131): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+13 warnings generated.
+compiling misc.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_gpio.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_gpio.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_gpio.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_gpio.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+12 warnings generated.
+compiling stm32f10x_gpio.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_rcc.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_rcc.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_rcc.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_rcc.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+12 warnings generated.
+compiling stm32f10x_rcc.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(22): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(86): warning: padding size of 'I2S_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(493): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(838): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(844): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = 0x01 << itmask;
+         ~ ~~~~~^~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_spi.c(890): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+17 warnings generated.
+compiling stm32f10x_spi.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(37): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(48): warning: // comments are not allowed in this language [-Wcomment]
+// DMA channel Interrupt Flags
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(146): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  DMA_Channel->CCR &= ~DMA_CHANNEL_EN;
+                   ~~ ^~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.h(157): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+__FORCE_INLINE bool DMA_ChannelStatus (DMA_Channel_TypeDef *DMA_Channel) {
+               ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(45): warning: // comments are not allowed in this language [-Wcomment]
+/// DMA Variables
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(233): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        RCC->AHBENR &= ~RCC_AHBENR_DMA1EN;
+                    ~~ ^~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(301): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel1_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(301): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel1_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(301): warning: no previous prototype for function 'DMA1_Channel1_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel1_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(301): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel1_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(302): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel2_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(302): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel2_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(302): warning: no previous prototype for function 'DMA1_Channel2_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel2_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(302): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel2_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(303): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel3_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(303): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel3_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(303): warning: no previous prototype for function 'DMA1_Channel3_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel3_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(303): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel3_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(304): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel4_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(304): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel4_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(304): warning: no previous prototype for function 'DMA1_Channel4_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel4_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(304): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel4_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(305): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel5_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(305): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel5_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(305): warning: no previous prototype for function 'DMA1_Channel5_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel5_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(305): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel5_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(306): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel6_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(306): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel6_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(306): warning: no previous prototype for function 'DMA1_Channel6_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel6_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(306): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel6_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(307): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+__WEAK void DMA1_Channel7_Event (uint32_t event) {;}
+                                                  ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(307): warning: unused parameter 'event' [-Wunused-parameter]
+__WEAK void DMA1_Channel7_Event (uint32_t event) {;}
+                                          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(307): warning: no previous prototype for function 'DMA1_Channel7_Event' [-Wmissing-prototypes]
+__WEAK void DMA1_Channel7_Event (uint32_t event) {;}
+            ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(307): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__WEAK void DMA1_Channel7_Event (uint32_t event) {;}
+       ^
+       static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(323): warning: no previous prototype for function 'DMA1_Channel1_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel1_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(323): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel1_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(335): warning: no previous prototype for function 'DMA1_Channel2_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel2_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(335): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel2_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(347): warning: no previous prototype for function 'DMA1_Channel3_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel3_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(347): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel3_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(359): warning: no previous prototype for function 'DMA1_Channel4_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel4_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(359): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel4_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(371): warning: no previous prototype for function 'DMA1_Channel5_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel5_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(371): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel5_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(383): warning: no previous prototype for function 'DMA1_Channel6_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel6_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(383): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel6_IRQHandler (void) {
+^
+static 
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(395): warning: no previous prototype for function 'DMA1_Channel7_IRQHandler' [-Wmissing-prototypes]
+void DMA1_Channel7_IRQHandler (void) {
+     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(395): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Channel7_IRQHandler (void) {
+^
+static 
+48 warnings generated.
+compiling DMA_STM32F10x.c...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(39): warning: // comments are not allowed in this language [-Wcomment]
+/// GPIO Pin identifier
+^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(173): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable);
+                                                 ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(182): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx);
+       ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(197): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef      *GPIOx,
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(246): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(47): warning: // comments are not allowed in this language [-Wcomment]
+#define AFIO_MAPR_SWJ_CFG_VAL   (AFIO_SWJ_FULL)    // Full SWJ (JTAG-DP + SW-DP)
+                                                   ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(56): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable) {
+                                          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(84): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx) {
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(111): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef *GPIOx, uint32_t num, GPIO_CONF conf,
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(128): warning: integer constant not in range of enumerated type 'GPIO_CONF' [-Wassign-enum]
+      conf &= ~1;
+              ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(140): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg &= ~(0xF << (num << 2));
+       ~~ ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(141): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg |= ((conf << 2) | mode) << (num << 2);
+       ~~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+27 warnings generated.
+compiling GPIO_STM32F10x.c...
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(84): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+16 warnings generated.
+compiling system_stm32f10x.c...
+".\Objects\SPI.axf" - 2 Error(s), 237 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: SPI Version: 2.3.0
+   * Component: RTOS2 Version: 2.1.3
+   * Component: Custom Version: 1.0.0
+   * Component: CORE Version: 5.6.0
+   * Component: Keil RTX5 Variant: Library Version: 5.5.4
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-Driver.2.7.2.pack
+                ARM.CMSIS-Driver.2.7.2
+                CMSIS Drivers for external devices
+   * Component: Multi-Slave Version: 1.0.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: SPI Version: 2.2
+   * Component: DMA Version: 1.3
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.6.0
+   * Component: GPIO Version: 3.6.0
+   * Component: RCC Version: 3.6.0
+   * Component: SPI Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS
+  ./RTE/CMSIS_Driver
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.7.2/SPI
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc
+  C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS Driver:SPI:2.3.0 (API)
+      Include file:  CMSIS/Driver/Include/Driver_SPI.h
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: ARM::CMSIS Driver:SPI:Custom:1.0.0
+      Include file:  CMSIS/Driver/Include/Driver_SPI.h
+      Source file:   CMSIS/Driver/DriverTemplates/Driver_SPI.c
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.4
+      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
+      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
+      Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
+      Library file:  CMSIS/RTOS2/RTX/Library/ARM/RTX_CM3.lib
+      Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/main.c
+      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Events.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
+
+   * Component: Keil::CMSIS Driver:SPI:2.2
+      Source file:   RTE_Driver/SPI_STM32F10x.c
+
+   * Component: Keil::CMSIS Driver:SPI:Multi-Slave:1.0.1
+      Include file:  Config/SPI_MultiSlave_Config.h
+      Include file:  SPI/SPI_MultiSlave.h
+      Source file:   SPI/SPI_MultiSlave.c
+
+   * Component: Keil::Device:DMA:1.3
+      Source file:   RTE_Driver/DMA_STM32F10x.c
+      Include file:  RTE_Driver/DMA_STM32F10x.h
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver/GPIO_STM32F10x.h
+      Source file:   RTE_Driver/GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
+      Source file:   Device/StdPeriph_Driver/src/misc.c
+      Include file:  Device/StdPeriph_Driver/inc/misc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_rcc.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:3.6.0
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_spi.c
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_spi.h
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

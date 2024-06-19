@@ -1,0 +1,12 @@
+SCK, MOSI, MISO, NSS.
+- giao tiếp song công có thể truyền và nhận xùng lúc
+- một master có thể giao tiếp được với nhiều slaver
+- khi kết nối với slaver nào thì chấn NSS của slaver đó thả xuống 0 và các slaver còn lại được kéo lên 1
+- 4 chế độ truyền nhận:
+	+ CPOl(liên quan đến hình dạng xung): 
+		0 là khi không truyền thì xung clock ở mức 0 và khi xung được kéo lên mức 1 thì nó sẽ đẩy data đi
+		1 là khi không truyền thì xung ở mức 1 và khi xung đước kéo xuống mức 0 thì nó đẩy data đi
+
+	+ CPHAL
+		0 là đưa data và trước rồi mới đẩy xung vào rồi đi
+		1 thì đưa một xung vào trước rồi mới đưa data và và cần 1 xung nữa để đẩy đi

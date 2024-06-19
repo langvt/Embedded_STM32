@@ -1,0 +1,17 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\display.o"
+".\objects\fonts.o"
+".\objects\iic.o"
+".\objects\ssd1306.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\ssd1306_Heart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ssd1306_Heart.map" -o .\Objects\ssd1306_Heart.axf
